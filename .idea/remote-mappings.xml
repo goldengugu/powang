@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RemoteMappingsManager">
+    <list>
+      <list>
+        <remote-mappings server-id="python@sftp://root@47.108.66.235:22/opt/Anaconda3/envs/powang/bin/python3">
+          <settings>
+            <list>
+              <mapping local-root="$PROJECT_DIR$" remote-root="/opt/powang" />
+            </list>
+          </settings>
+        </remote-mappings>
+      </list>
+    </list>
+  </component>
+</project>
