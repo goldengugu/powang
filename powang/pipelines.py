@@ -5,16 +5,15 @@
 
 
 # useful for handling different item types with a single interface
+
 import csv
 import os
-
 from itemadapter import ItemAdapter
 
 
 class PowangPipeline:
 
     file = None # 文件
-
     def open_spider(self,spider):
 
         # 文件保存路径
@@ -44,3 +43,4 @@ class PowangPipeline:
     def close_spider(self,spider):
         print('爬取结束....')
         self.file.close()
+

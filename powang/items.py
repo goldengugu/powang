@@ -9,6 +9,7 @@ import scrapy
 class PowangItem(scrapy.Item):
     # define the fields for your item here like:
     # name = scrapy.Field()
+
     item_name = scrapy.Field()
     item_link = scrapy.Field()
     item_describe = scrapy.Field()

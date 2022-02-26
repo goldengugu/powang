@@ -14,13 +14,16 @@ NEWSPIDER_MODULE = 'powang.spiders'
 
 
 # Crawl responsibly by identifying yourself (and your website) on the user-agent
+
 # USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 Edg/98.0.1108.56'
 
 # Obey robots.txt rules
 ROBOTSTXT_OBEY = False
 
+
 # 只显示错误类型日志
 LOG_LEVEL = 'ERROR'
+
 
 # Configure maximum concurrent requests performed by Scrapy (default: 16)
 #CONCURRENT_REQUESTS = 32
@@ -65,9 +68,11 @@ DOWNLOADER_MIDDLEWARES = {
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
+
 ITEM_PIPELINES = {
    'powang.pipelines.PowangPipeline': 300,
 }
+
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
@@ -91,6 +96,7 @@ ITEM_PIPELINES = {
 #HTTPCACHE_STORAGE = 'scrapy.extensions.httpcache.FilesystemCacheStorage'
 
 # 最大重试次数
+
 RETRY_TIMES = 1000
 RETRY_ENABLED = True
 RETRY_HTTP_CODES = [500, 503, 504, 400, 403, 408, 429]
@@ -98,3 +104,4 @@ RETRY_HTTP_CODES = [500, 503, 504, 400, 403, 408, 429]
 # 下载延时
 DOWNLOAD_DELAY = 2
 RANDOMIZE_DOWNLOAD_DELAY = True
+
