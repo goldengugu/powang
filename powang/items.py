@@ -16,3 +16,8 @@ class PowangItem(scrapy.Item):
     item_stars = scrapy.Field()
     item_updated = scrapy.Field()
     pass
+class GoogleItem(scrapy.Item):
+
+    title = scrapy.Field()
+    rawurl = scrapy.Field()
+    url = scrapy.Field()
