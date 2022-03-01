@@ -60,10 +60,6 @@ class PowangDownloaderMiddleware:
     # Not all methods need to be defined. If a method is not defined,
     # scrapy acts as if the downloader middleware does not modify the
     # passed objects.
-
-<<<<<<< Updated upstream
-=======
-
     user_agent_list = [
         "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.1 "
         "(KHTML, like Gecko) Chrome/22.0.1207.1 Safari/537.1",
@@ -105,7 +101,6 @@ class PowangDownloaderMiddleware:
 
     Proxys=['http://127.0.0.1:1087']
 
->>>>>>> Stashed changes
     @classmethod
     def from_crawler(cls, crawler):
         # This method is used by Scrapy to create your spiders.

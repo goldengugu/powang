@@ -11,7 +11,7 @@ class PowangItem(scrapy.Item):
     # name = scrapy.Field()
     pass
 
-<<<<<<< Updated upstream
+
 
 class GithubItem(scrapy.Item):
     # project's name
@@ -20,10 +20,9 @@ class GithubItem(scrapy.Item):
     link = scrapy.Field()
 
     star = scrapy.Field()
-=======
+
 class GoogleItem(scrapy.Item):
 
     title = scrapy.Field()
     rawurl = scrapy.Field()
     url = scrapy.Field()
->>>>>>> Stashed changes
