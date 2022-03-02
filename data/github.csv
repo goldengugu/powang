@@ -964,3 +964,20 @@ russdill/ncsvc-socks-wrapper,https://github.com/russdill/ncsvc-socks-wrapper,wra
 hermixy/qtun,https://github.com/hermixy/qtun,轻量级开源VPN软件,14,2015/3/31 22:31
 passy/raspbian-vpn-router,https://github.com/passy/raspbian-vpn-router,Setting up a Raspberry Pi 3 as a VPN Gateway,32,2019/4/24 4:08
 xlinuxmanx/ike,https://github.com/xlinuxmanx/ike,The Shrewsoft VPN Manager,6,2020/6/9 21:27
+hwdsl2/setup-ipsec-vpn,https://github.com/hwdsl2/setup-ipsec-vpn,"Scripts to build your own IPsec VPN server, with IPsec/L2TP, Cisco IPsec and IKEv2",17.6k,2022-03-01 14:03:33
+hwdsl2/docker-ipsec-vpn-server,https://github.com/hwdsl2/docker-ipsec-vpn-server,"Docker image to run an IPsec VPN server, with IPsec/L2TP, Cisco IPsec and IKEv2",4.5k,2022-02-26 13:58:20
+vpncn/vpncn.github.io,https://github.com/vpncn/vpncn.github.io,2022中国翻墙软件VPN推荐以及科学上网避坑，稳定好用。对比SSR机场、蓝灯、V2ray、老王VPN、VPS搭建梯子等科学上网与翻墙软件，中国最新科学上网翻墙梯子VPN下载推荐。,4.4k,2022-02-25 22:56:08
+ntop/n2n,https://github.com/ntop/n2n,Peer-to-peer VPN,3.7k,2022-02-21 17:09:06
+clowwindy/ShadowVPN,https://github.com/clowwindy/ShadowVPN,Removed according to regulations.,1.5k,2020-07-23 12:48:28
+aditya-shri/VPN,https://github.com/aditya-shri/VPN,Personal vpn using v2ray and shadowsocks hosted on heroku,96,2021-09-13 23:21:19
+91yun/vpn,https://github.com/91yun/vpn,vpn一键安装包,195,2016-05-03 12:08:30
+SoftEtherVPN/SoftEtherVPN,https://github.com/SoftEtherVPN/SoftEtherVPN,Cross-platform multi-protocol VPN software. Pull requests are welcome. The stable version is available at https://github.com/SoftEtherVPN/SoftEtherVPN_Stable.,8.7k,2022-02-23 02:47:09
+lexrus/VPNOn,https://github.com/lexrus/VPNOn,Turn On your VPN like a hero.,4.3k,2020-03-15 15:23:04
+clown-coding/vpn,https://github.com/clown-coding/vpn,快速搭建一个自己的VPN翻墙科学上网,667,2018-12-30 13:53:11
+wangyu-/tinyfecVPN,https://github.com/wangyu-/tinyfecVPN,"A VPN Designed for Lossy Links, with Build-in Forward Error Correction(FEC) Support. Improves your Network Quality on a High-latency Lossy Link.",1.9k,2021-12-09 22:27:16
+YoulianBoshi/lantern-vpn,https://github.com/YoulianBoshi/lantern-vpn,"PC蓝灯破解版在这里,重启程序重置500M流量,屏蔽自动更新,永久使用",2.3k,2021-09-30 09:58:30
+AlanTur1ng/Free-VPN-for-Coursera,https://github.com/AlanTur1ng/Free-VPN-for-Coursera,🔑 🔓免费开源的科学上网工具,2.4k,2019-04-06 21:17:50
+pritunl/pritunl,https://github.com/pritunl/pritunl,Enterprise VPN server,3.4k,2022-03-02 01:53:50
+OpenVPN/openvpn,https://github.com/OpenVPN/openvpn,OpenVPN is an open source VPN daemon,6.8k,2022-03-01 10:15:44
+jedisct1/dsvpn,https://github.com/jedisct1/dsvpn,A Dead Simple VPN.,4.9k,2022-02-21 17:03:43
+trailofbits/algo,https://github.com/trailofbits/algo,Set up a personal VPN in the cloud,24.7k,2022-03-01 16:22:49

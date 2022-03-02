@@ -10,7 +10,8 @@ etree = html.etree
 class GoogleSpider(scrapy.Spider):
     name = 'google'
     # https://www.google.com/search?gbv=1&q=vpn&oq=&aqs=
-    url = 'https://www.google.com/search?gbv=1&q={}&oq=&aqs='
+    url = 'https://www.google.com/search?q={}&gbv=1&sei=1hcfYs2gOYykoAT0tbGADQ'
+    #
     keywords = ["vpn", "翻墙"]
 
     def start_requests(self):

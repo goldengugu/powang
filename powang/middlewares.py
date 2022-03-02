@@ -103,7 +103,7 @@ class PowangDownloaderMiddleware:
         "(KHTML, like Gecko) Chrome/19.0.1055.1 Safari/535.24"
     ]
 
-    Proxys=['127.0.0.1:1087']
+    Proxys=['http://127.0.0.1:1087']
 
     @classmethod
     def from_crawler(cls, crawler):
