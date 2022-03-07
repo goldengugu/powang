@@ -4,9 +4,11 @@
 # https://docs.scrapy.org/en/latest/topics/spider-middleware.html
 import random
 
-
 from scrapy import signals
-
+from scrapy.http import HtmlResponse
+from selenium import webdriver
+import time
+from selenium.common.exceptions import NoSuchElementException
 # useful for handling different item types with a single interface
 from itemadapter import is_item, ItemAdapter
 
@@ -63,7 +65,6 @@ class PowangDownloaderMiddleware:
     # scrapy acts as if the downloader middleware does not modify the
     # passed objects.
 
-
     user_agent_list = [
         "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.1 "
         "(KHTML, like Gecko) Chrome/22.0.1207.1 Safari/537.1",
@@ -103,7 +104,7 @@ class PowangDownloaderMiddleware:
         "(KHTML, like Gecko) Chrome/19.0.1055.1 Safari/535.24"
     ]
 
-    Proxys=['http://127.0.0.1:1087']
+    Proxys = ['http://127.0.0.1:1087']
 
     @classmethod
     def from_crawler(cls, crawler):
@@ -111,7 +112,6 @@ class PowangDownloaderMiddleware:
         s = cls()
         crawler.signals.connect(s.spider_opened, signal=signals.spider_opened)
         return s
-
 
     # 拦截请求
     def process_request(self, request, spider):
@@ -130,8 +130,8 @@ class PowangDownloaderMiddleware:
         # - return a Response object
         # - return a Request object
         # - or raise IgnoreRequest
+        print(response.url)
         return response
-
 
     # 拦截发生异常的请求
     def process_exception(self, request, exception, spider):
@@ -146,3 +146,33 @@ class PowangDownloaderMiddleware:
 
     def spider_opened(self, spider):
         spider.logger.info('Spider opened: %s' % spider.name)
+
+
+class TwitterMiddleware:
+    def process_request(self, request, spider):
+        if spider.name == 'twitter' and request.meta['mode'] == 'scroll':
+            print("mode:", request.meta['mode'])
+            spider.browser.execute_script('window.scrollBy(0,1000)')
+            time.sleep(3)
+            print("test succeed!")
+            return HtmlResponse(url=request.url, body=spider.browser.page_source, request=request, encoding='utf-8',
+                                status=200)
+        return None
+
+class TwitterUserMiddleware:
+    def process_request(self, request, spider):
+        if spider.name == 'twitter' and request.meta['mode'] == 'access':
+            print(request.meta['mode'])
+            ChromeOptions = webdriver.ChromeOptions()
+            ChromeOptions.add_argument("--proxy-server=http://127.0.0.1:1087")
+            # ChromeOptions.add_argument('headless')
+
+            # 访问twitter
+            browser = webdriver.Chrome(options=ChromeOptions)
+            browser.get(request.url)
+            browser.implicitly_wait(10)
+            page = browser.page_source
+            browser.close()
+            # print(page)
+            return HtmlResponse(url=request.url, body=page, request=request, encoding='utf-8',
+                                status=200)

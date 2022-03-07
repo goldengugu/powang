@@ -57,7 +57,9 @@ LOG_LEVEL = 'ERROR'
 # Enable or disable downloader middlewares
 # See https://docs.scrapy.org/en/latest/topics/downloader-middleware.html
 DOWNLOADER_MIDDLEWARES = {
-   'powang.middlewares.PowangDownloaderMiddleware': 543,
+   'powang.middlewares.PowangDownloaderMiddleware': 544,
+   'powang.middlewares.TwitterMiddleware': 542,
+   'powang.middlewares.TwitterUserMiddleware': 543,
 }
 
 # Enable or disable extensions
